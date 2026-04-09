@@ -1,0 +1,29 @@
+<div id="pantalla1" class="pantalla">
+  <div id="particles"></div>
+
+  <div class="contenido">
+    <h1>IMPURO</h1>
+    <div class="neon">Powered by fcc</div>
+    <button onclick="cambiar()">Comienza</button>
+  </div>
+</div>
+
+<div id="pantalla2" class="pantalla">
+  <div id="fondo-escena"></div>
+  <!---Cambiar el class figura por el src--->
+
+  <!---<img id="personaje" src="caminar1.png">--->
+  <div id="personaje" class="figura"></div>
+  <div class="piso"></div>
+  <div class="controles">
+    <button onmousedown="moviendo = -1" onmouseup="moviendo = 0" ontouchstart="moviendo = -1" ontouchend="moviendo = 0" onclick="mover(-1)">◀</button>
+    <button onclick="accion()">●</button>
+    <button onmousedown="moviendo = 1" onmouseup="moviendo = 0" ontouchstart="moviendo = 1" ontouchend="moviendo = 0" onclick="mover(1)">▶</button>
+  </div>
+
+  <div id="dialogo" class="dialogo">
+    <p>Interacción activada</p>
+    <button onclick="cerrar()">Cerrar</button>
+  </div>
+
+</div>
